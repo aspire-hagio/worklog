@@ -1,0 +1,14 @@
+#main-textarea {
+	width: 400px;
+	height: 120px;
+}
+
+
+.post-body {
+	font-size: 14px;
+}
+
+.post-date {
+	color: #8899a6;
+	font-size: 12px;
+}
