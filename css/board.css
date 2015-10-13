@@ -6,9 +6,20 @@
 
 .post-body {
 	font-size: 14px;
+	font-family: Meiryo;
 }
 
 .post-date {
 	color: #8899a6;
 	font-size: 12px;
+	font-family: Meiryo;
 }
+
+.sunday {
+	background-color: #FF82B2;
+}
+
+.saturday {
+	background-color: #75A9FF;
+}
+
