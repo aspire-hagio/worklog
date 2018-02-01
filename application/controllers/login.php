@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 	public function __construct() {
@@ -19,12 +20,11 @@ class Login extends CI_Controller {
 
 		$user = $this->User->findUser($user_name, $password);
 
-//		$this->session->set_userdata(['user_id' => $user['user_id']]);
-		$this->session->set_userdata(['user_id' => $user->user_id]);
-
 		print_r($this->input->post());
 		$this->load->helper('url');
 		if ($user) {
+//		$this->session->set_userdata(['user_id' => $user['user_id']]);
+            $this->session->set_userdata('user_id', $user->user_id);
 			redirect('board');
 		} else {
 			redirect('login');
